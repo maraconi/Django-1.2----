@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Рецепты</title>
+</head>
+<body>
+<h1><i><span style="color: #32CD32;"> Список необходимых ингредиентов: </span></i></h1>
+{% for ingredient, amount in recipe.items %}
+    <p><li>{{ ingredient }}: {{ amount }}</li></p>
+{% empty %}
+    <p>Такого рецепта не знаю :(</p>
+{% endfor %}
+<a href="http://127.0.0.1:8000/"> Вернуться в Список рецептов </a>
+
+</body>
+</html>

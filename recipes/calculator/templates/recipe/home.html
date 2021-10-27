@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Кулинарная книга</title>
+</head>
+<body>
+<h1><i><span style="color: #ff6600;">Список рецептов</span></i></h1>
+    {% for recipe in recipes %}
+<p><li<span style="color: #ff6600;">><a href="/{{ recipe }}">{{ recipe }}</a></li</span>
+    {% endfor %}
+</body>
+</html>
